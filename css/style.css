@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Oswald&display=swap');
+
+body {
+  font-family: 'Lato', sans-serif;
+  background: rgb(250,250,250);
+  color: rgb(10, 10, 10);
+}
+
+h1, h2, h3, a {
+  font-family: 'Oswald', sans-serif;
+}
+
+.banner {
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("../images/banner.jpg");
+  background-position: center;
+  background-size: cover;
+  height : 100vh;
+  color: rgb(250, 250, 250);
+}
+
+ul {
+  list-style-type: none;
+}
+
+.intro {
+  height: 100vh;
+}
+
+.detailsandcontact {
+  position: relative;
+  top: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.details {
+  letter-spacing: 2px;
+}
+
+.details p {
+  font-size: 20px;
+}
+
+.contact {
+  font-size: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+.contact a {
+  color: rgba(250, 250, 250, 0.8);
+}
+
+.contact a:hover {
+  color: rgba(250, 250, 250, 1);
+  text-decoration: none;
+}
+
+.bannerend {
+  position: relative;
+  top: 65%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 24px;
+}
+
+.bannerend a {
+  color: rgba(250, 250, 250, 0.8);
+}
+
+.bannerend a:hover {
+  color: rgba(250, 250, 250, 1);
+  text-decoration: none;
+}
+
+.avatar {
+  background-image: url("../images/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.contact-fix {
+  font-size: 32px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+  position: fixed;
+  top: 230px;
+  right: 10px;
+  border-radius: 10px;
+}
+
+.contact-fix a {
+  color: rgba(10, 10, 10, 0.8);
+}
+
+.contact-fix a:hover {
+  color: rgba(10, 10, 10, 1);
+  text-decoration: none;
+}
+
+.portfolio a {
+  color: rgba(10, 10, 10, 0.8);
+}
+
+.portfolio a:hover {
+  color: rgba(10, 10, 10, 1);
+  text-decoration: none;
+}
+
+.card-project {
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.screens {
+  overflow: auto;
+  max-height: 590px;
+}
+
+.screens img {
+  width: 100%;
+}
+
+@media (min-width: 100px) and (max-width: 812px) {
+  .contact-fix {
+    flex-direction: row;
+    height: 10vh;
+    position: sticky;
+    top: 0px;
+  }
+  .screens {
+    max-height: 170px;
+  }
+}
