@@ -28,7 +28,7 @@ ul {
 
 .detailsandcontact {
   position: relative;
-  top: 35%;
+  top: 50%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -200,7 +200,6 @@ ul {
 
 .career {
   text-align: left;
-  margin-bottom: 164px;
 }
 
 .education {
@@ -218,7 +217,7 @@ ul {
     max-height: 170px;
   }
    .career {
-    margin-bottom: 239px;
+    margin-bottom: 92px;
   }
 }
 
@@ -231,9 +230,6 @@ ul {
   }
   .screens {
     max-height: 190px;
-  }
-  .career {
-    margin-bottom: 239px;
   }
 }
 
