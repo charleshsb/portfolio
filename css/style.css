@@ -79,15 +79,6 @@ ul {
   text-decoration: none;
 }
 
-.avatar {
-  background-image: url("../images/banner.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-}
-
 .contact-fix {
   font-size: 32px;
   background: white;
@@ -128,6 +119,11 @@ ul {
   padding: 10px;
   margin: 10px;
   border-radius: 10px;
+  text-align: center;
+}
+
+.card-project a {
+  font-size: 48px;
 }
 
 .screens {
@@ -139,7 +135,68 @@ ul {
   width: 100%;
 }
 
-@media (min-width: 100px) and (max-width: 812px) {
+.card-presentation {
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.avatar-finance {
+  background-image: url("../images/avatar/Finance.png");
+  background-size: cover;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.avatar-free {
+  background-image: url("../images/avatar/Free.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.business {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.business i {
+  font-size: 48px;
+}
+
+.transition {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.transition i {
+  font-size: 48px;
+}
+
+.code {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.code i {
+  font-size: 48px;
+}
+
+@media (min-width: 100px) and (max-width: 375px) {
   .contact-fix {
     flex-direction: row;
     height: 10vh;
@@ -148,5 +205,55 @@ ul {
   }
   .screens {
     max-height: 170px;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 575px) {
+  .contact-fix {
+    flex-direction: row;
+    height: 10vh;
+    position: sticky;
+    top: 0px;
+  }
+  .screens {
+    max-height: 190px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .contact-fix {
+    flex-direction: row;
+    height: 10vh;
+    position: sticky;
+    top: 0px;
+  }
+  .screens {
+    max-height: 360px;
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1024px) {
+  .contact-fix {
+    flex-direction: row;
+    height: 10vh;
+    position: sticky;
+    top: 0px;
+  }
+  .screens {
+    max-height: 490px;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
