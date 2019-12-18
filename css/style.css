@@ -142,7 +142,10 @@ ul {
   border-radius: 10px;
   text-align: center;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  max-width: fit-content;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .card-presentation ul {
@@ -214,6 +217,9 @@ ul {
   .screens {
     max-height: 170px;
   }
+   .career {
+    margin-bottom: 239px;
+  }
 }
 
 @media (min-width: 376px) and (max-width: 575px) {
@@ -225,6 +231,9 @@ ul {
   }
   .screens {
     max-height: 190px;
+  }
+  .career {
+    margin-bottom: 239px;
   }
 }
 
