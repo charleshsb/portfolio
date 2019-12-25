@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Oswald&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Lato', sans-serif;
   background: rgb(250,250,250);
@@ -190,19 +194,19 @@ ul {
   font-size: 48px;
 }
 
-.programming {
+.programming ul {
   text-align: left;
 }
 
-.soft {
+.soft ul {
   text-align: left;
 }
 
-.career {
+.career ul {
   text-align: left;
 }
 
-.education {
+.education ul {
   text-align: left;
 }
 
