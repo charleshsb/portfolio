@@ -15,7 +15,7 @@ h1, h2, h3, a {
 }
 
 .banner {
-  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("../images/banner.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("../images/banner.jpg");
   background-position: center;
   background-size: cover;
   height : 100vh;
@@ -67,7 +67,7 @@ ul {
 
 .bannerend {
   position: relative;
-  top: 65%;
+  top: 60%;
   display: flex;
   align-items: center;
   justify-content: space-around;
