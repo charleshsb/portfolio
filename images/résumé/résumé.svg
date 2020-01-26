@@ -1,0 +1,22 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><style>
+   
+     .line-profile3-profile {animation:line-profile3-profile 5s infinite; stroke-dasharray: 115;}
+     .line-profile3-line1 {animation:line-profile3-line 5s infinite; stroke-dasharray: 150;}
+     .line-profile3-line2 {animation:line-profile3-line 5s infinite; stroke-dasharray: 150;}
+     .line-profile3-line3 {animation:line-profile3-line 5s infinite; stroke-dasharray: 150;}
+     @keyframes line-profile3-profile {
+       0%{stroke-dashoffset: 125;}
+       20%{stroke-dashoffset: 0;}
+       50%{stroke-dashoffset: 0; opacity: 1;}
+       80%{stroke-dashoffset: 0; opacity: 0;}
+       100%{stroke-dashoffset: -115; opacity: 0;}
+     }
+     @keyframes line-profile3-line {
+       0%{stroke-dashoffset: 160;}
+       20%{stroke-dashoffset: 160;}
+       50%{stroke-dashoffset: 0; opacity: 1;}
+       80%{stroke-dashoffset: 0; opacity: 0;}
+       100%{stroke-dashoffset: 150; opacity: 0;}
+     }
+   
+  </style><rect x="10" y="20" width="81" height="60" rx="8" fill="#fff" stroke="#000" stroke-width="2px"></rect><g class="line-profile3-profile" style="animation-duration: 5s;"><circle cx="34" cy="41" r="7" fill="#fff" stroke="#000" stroke-width="2px"></circle><path d="M47.9648 67H20.0352C20.5479 59.7347 26.6042 54 34 54C41.3958 54 47.4521 59.7347 47.9648 67Z" fill="#fff" stroke="#000" stroke-width="2px"></path></g><path class="line-profile3-line1" d="M57 39H80" stroke="#000" stroke-width="2px" style="animation-duration: 5s;"></path><path class="line-profile3-line2" d="M57 50H80" stroke="#000" stroke-width="2px" style="animation-duration: 5s;"></path><path class="line-profile3-line3" d="M57 61H80" stroke="#000" stroke-width="2px" style="animation-duration: 5s;"></path></svg>
