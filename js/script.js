@@ -1,5 +1,6 @@
 const banner = document.querySelector('.banner');
 const timeline = document.querySelector('.cards-project');
+let isUpdateQueued = false;
 
 const io = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
@@ -15,6 +16,7 @@ document.querySelectorAll('.reveal').forEach((el, i) => {
 });
 
 const update = () => {
+  isUpdateQueued = false;
   // parallax only while the hero is on screen
   if (window.scrollY < window.innerHeight) {
     banner.style.setProperty('--py', window.scrollY * 0.25);
@@ -24,5 +26,10 @@ const update = () => {
   timeline.style.setProperty('--progress', Math.min(1, Math.max(0, progress)));
 };
 
-window.addEventListener('scroll', () => requestAnimationFrame(update), { passive: true });
+// one update per frame, however many scroll events fire
+window.addEventListener('scroll', () => {
+  if (isUpdateQueued) return;
+  isUpdateQueued = true;
+  requestAnimationFrame(update);
+}, { passive: true });
 update();

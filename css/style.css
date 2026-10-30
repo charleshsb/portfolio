@@ -71,14 +71,21 @@ h1, h2, h3, h4, a {
   color: #fafafa;
 }
 
+/* the head sits in the top half of the photo: anchor high so a wide, short window does not cut it */
 .banner::before {
   content: "";
   position: absolute;
-  inset: -26% 0 0 0;
+  inset: 0;
   z-index: -2;
-  background: url("../images/banner.jpg") center / cover;
+  background: url("../images/banner.webp") center 10% / cover;
   translate: 0 calc(var(--py, 0) * 1px);
-  animation: drift 24s ease-in-out infinite alternate;
+}
+
+@media (max-width: 800px) {
+  .banner::before {
+    background-image: url("../images/banner-mobile.webp");
+    background-position: center;
+  }
 }
 
 .banner::after {
@@ -87,11 +94,6 @@ h1, h2, h3, h4, a {
   inset: 0;
   z-index: -1;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0.7) 100%);
-}
-
-@keyframes drift {
-  from { scale: 1; }
-  to { scale: 1.08; }
 }
 
 @keyframes rise {
@@ -104,13 +106,16 @@ h1, h2, h3, h4, a {
   100% { box-shadow: 0 0 0 12px rgba(127, 176, 217, 0); }
 }
 
+/* text hugs the left edge of the screen, not the centered container, so it stays clear of the face on wide windows */
 .intro {
   min-height: 100vh;
   min-height: 100svh;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  max-width: none;
   padding-bottom: 8vh;
+  padding-left: clamp(20px, 6vw, 140px);
 }
 
 .details h1 {
@@ -150,13 +155,13 @@ h1, h2, h3, h4, a {
 
 .details > *,
 .bannerend {
-  animation: rise 0.9s var(--ease) both;
+  animation: rise 0.6s var(--ease) both;
 }
 
-.details h1 { animation-delay: 0.1s; }
-.details h2 { animation-delay: 0.25s; }
-.details p { animation-delay: 0.4s; }
-.bannerend { animation-delay: 0.55s; }
+.details h1 { animation-delay: 0.05s; }
+.details h2 { animation-delay: 0.12s; }
+.details p { animation-delay: 0.2s; }
+.bannerend { animation-delay: 0.28s; }
 
 .bannerend {
   display: flex;
@@ -212,6 +217,12 @@ h1, h2, h3, h4, a {
   border-radius: 50%;
   color: var(--fg);
   transition: background 0.2s, transform 0.25s var(--ease);
+}
+
+.contact-fix svg {
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
 }
 
 .contact-fix a:hover {
@@ -447,13 +458,13 @@ html.js .reveal.in {
 }
 
 .avatar-finance {
-  background-image: url("../images/avatar/Finance.png");
+  background-image: url("../images/avatar/finance.webp");
   filter: grayscale(1);
   opacity: 0.85;
 }
 
 .avatar-free {
-  background-image: url("../images/avatar/Free.jpg");
+  background-image: url("../images/avatar/free.webp");
   box-shadow: 0 0 0 3px var(--accent);
 }
 
