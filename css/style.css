@@ -108,15 +108,6 @@ ul {
   text-decoration: none;
 }
 
-.portfolio a {
-  color: rgba(10, 10, 10, 0.8);
-}
-
-.portfolio a:hover {
-  color: rgba(10, 10, 10, 1);
-  text-decoration: none;
-}
-
 .card-project {
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
@@ -126,17 +117,9 @@ ul {
   text-align: center;
 }
 
-.card-project a {
-  font-size: 48px;
-}
-
-.screens {
-  overflow: auto;
-  max-height: 590px;
-}
-
-.screens img {
-  width: 100%;
+.card-project h3 {
+  font-size: 20px;
+  color: rgba(10, 10, 10, 0.6);
 }
 
 .card-presentation {
@@ -244,6 +227,11 @@ ul {
   justify-content: center;
 }
 
+.footer a {
+  color: inherit;
+  text-decoration: underline;
+}
+
 
 @media (min-width: 100px) and (max-width: 375px) {
   .contact-fix {
@@ -251,9 +239,6 @@ ul {
     height: 10vh;
     position: sticky;
     top: 0px;
-  }
-  .screens {
-    max-height: 170px;
   }
    .career {
     margin-bottom: 92px;
@@ -267,9 +252,6 @@ ul {
     position: sticky;
     top: 0px;
   }
-  .screens {
-    max-height: 190px;
-  }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -279,9 +261,6 @@ ul {
     position: sticky;
     top: 0px;
   }
-  .screens {
-    max-height: 360px;
-  }
 }
 
 @media (min-width: 993px) and (max-width: 1024px) {
@@ -290,8 +269,5 @@ ul {
     height: 10vh;
     position: sticky;
     top: 0px;
-  }
-  .screens {
-    max-height: 490px;
   }
 }
