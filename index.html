@@ -5,164 +5,194 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>stas boyeldieu | backend developer</title>
     <meta name="description" content="Backend developer specialized in Ruby on Rails, building with AI. Based in France, looking at fully remote roles.">
+    <meta name="theme-color" content="#07080b">
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="preload" as="image" href="images/portrait-lg.webp" fetchpriority="high">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" as="image" href="images/banner.webp" media="(min-width: 801px)" fetchpriority="high">
-    <link rel="preload" as="image" href="images/banner-mobile.webp" media="(max-width: 800px)" fetchpriority="high">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400&family=Oswald:wght@300;500&display=swap">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+    <link rel="stylesheet" href="css/style.css?v=3">
     <script>document.documentElement.classList.add('js')</script>
   </head>
   <body>
-    <div class="banner">
-      <picture class="banner-photo">
-        <source media="(max-width: 800px)" srcset="images/banner-mobile.webp">
-        <img src="images/banner.webp" alt="portrait of charles henry stas boyeldieu" width="1600" height="1065" fetchpriority="high">
-      </picture>
-      <div class="container intro">
-        <div class="detailsandcontact">
-          <div class="details">
-            <h1>charles henry</h1>
-            <h2>stas boyeldieu</h2>
-            <p>backend developer</p>
+    <div class="aurora" aria-hidden="true"></div>
+
+    <header class="nav">
+      <a class="brand" href="#top">~/charleshsb</a>
+      <nav aria-label="sections">
+        <a href="#experience">experience</a>
+        <a href="#stack">stack</a>
+        <a href="#about">about</a>
+        <a href="#contact">contact</a>
+      </nav>
+      <button class="kbd" type="button" data-open-palette aria-label="open the command menu">
+        <span>menu</span><kbd>⌘K</kbd>
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-text">
+          <p class="status"><span class="dot"></span>open to fully remote roles</p>
+          <p class="eyebrow">charles henry stas boyeldieu</p>
+          <h1>backend developer, <span class="grad">ruby on rails enthusiast.</span></h1>
+          <p class="prompt"><b>$</b> <span id="typed">shipping rails in production</span><span class="cursor"></span></p>
+          <div class="actions">
+            <a class="btn primary" href="#experience">view experience</a>
+            <a class="btn" href="images/cv/cv.pdf" target="_blank" rel="noopener">résumé ↗</a>
+            <button class="btn" type="button" data-copy-email>copy email</button>
           </div>
         </div>
-        <div class="bannerend">
-          <a href="#experience">experience</a>
-          <a href="#about">about</a>
-        </div>
-      </div>
-      <div id="experience"></div>
-    </div>
+        <figure class="portrait">
+          <img src="images/portrait-lg.webp" alt="portrait of charles henry stas boyeldieu" width="800" height="800" fetchpriority="high">
+          <figcaption>france · remote</figcaption>
+        </figure>
+      </section>
 
-    <!-- icons: Font Awesome Free 5.15.4 (CC BY 4.0), inlined so the page loads no icon font -->
-    <div class="contact-fix">
-      <a href="tel:+33659874451" aria-label="phone" data-label="phone"><svg viewBox="0 0 512 512" aria-hidden="true"><path d="M5.37 103.822c138.532-138.532 362.936-138.326 501.262 0 6.078 6.078 7.074 15.496 2.583 22.681l-43.214 69.138a18.332 18.332 0 0 1-22.356 7.305l-86.422-34.569a18.335 18.335 0 0 1-11.434-18.846L351.741 90c-62.145-22.454-130.636-21.986-191.483 0l5.953 59.532a18.331 18.331 0 0 1-11.434 18.846l-86.423 34.568a18.334 18.334 0 0 1-22.356-7.305L2.787 126.502a18.333 18.333 0 0 1 2.583-22.68zM96 308v-40c0-6.627-5.373-12-12-12H44c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h40c6.627 0 12-5.373 12-12zm96 0v-40c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h40c6.627 0 12-5.373 12-12zm96 0v-40c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h40c6.627 0 12-5.373 12-12zm96 0v-40c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h40c6.627 0 12-5.373 12-12zm96 0v-40c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h40c6.627 0 12-5.373 12-12zm-336 96v-40c0-6.627-5.373-12-12-12H92c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h40c6.627 0 12-5.373 12-12zm96 0v-40c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h40c6.627 0 12-5.373 12-12zm96 0v-40c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h40c6.627 0 12-5.373 12-12zm96 0v-40c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h40c6.627 0 12-5.373 12-12zM96 500v-40c0-6.627-5.373-12-12-12H44c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h40c6.627 0 12-5.373 12-12zm288 0v-40c0-6.627-5.373-12-12-12H140c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h232c6.627 0 12-5.373 12-12zm96 0v-40c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h40c6.627 0 12-5.373 12-12z"/></svg></a>
-      <a href="mailto:ch.boyeldieu@gmail.com" aria-label="email" data-label="email"><svg viewBox="0 0 512 512" aria-hidden="true"><path d="M256 8C118.941 8 8 118.919 8 256c0 137.059 110.919 248 248 248 48.154 0 95.342-14.14 135.408-40.223 12.005-7.815 14.625-24.288 5.552-35.372l-10.177-12.433c-7.671-9.371-21.179-11.667-31.373-5.129C325.92 429.757 291.314 440 256 440c-101.458 0-184-82.542-184-184S154.542 72 256 72c100.139 0 184 57.619 184 160 0 38.786-21.093 79.742-58.17 83.693-17.349-.454-16.91-12.857-13.476-30.024l23.433-121.11C394.653 149.75 383.308 136 368.225 136h-44.981a13.518 13.518 0 0 0-13.432 11.993l-.01.092c-14.697-17.901-40.448-21.775-59.971-21.775-74.58 0-137.831 62.234-137.831 151.46 0 65.303 36.785 105.87 96 105.87 26.984 0 57.369-15.637 74.991-38.333 9.522 34.104 40.613 34.103 70.71 34.103C462.609 379.41 504 307.798 504 232 504 95.653 394.023 8 256 8zm-21.68 304.43c-22.249 0-36.07-15.623-36.07-40.771 0-44.993 30.779-72.729 58.63-72.729 22.292 0 35.601 15.241 35.601 40.77 0 45.061-33.875 72.73-58.161 72.73z"/></svg></a>
-      <a href="https://www.linkedin.com/in/charleshenry-stasboyeldieu/" target="_blank" rel="noopener" aria-label="linkedin" data-label="linkedin"><svg viewBox="0 0 448 512" aria-hidden="true"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a>
-      <a href="https://github.com/charleshsb" target="_blank" rel="noopener" aria-label="github" data-label="github"><svg viewBox="0 0 496 512" aria-hidden="true"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></a>
-    </div>
-
-    <div class="container mt-4 experience">
-      <h1 class="section-title reveal">experience</h1>
-
-      <div class="cards-project">
-
-        <div class="card-project reveal">
-          <h2>backend developer</h2>
-          <h3>cheerz | 2025 - today</h3>
-          <p>backend development on a production Ruby on Rails codebase</p>
-        </div>
-
-        <div class="card-project reveal">
-          <h2>backend developer</h2>
-          <h3>ilek | 2023 - 2025</h3>
-          <p>billing then collection teams: invoicing customers, then reducing and anticipating unpaid bills</p>
-          <p>NestJS / TypeScript service in hexagonal architecture with CQRS, AMQP messaging, new features in the Rails codebase, PostgreSQL</p>
-        </div>
-
-        <div class="card-project reveal">
-          <h2>fullstack developer</h2>
-          <h3>investglass | 2022 - 2023</h3>
-          <p>CRM for financial institutions: Rails MVC application, PostgreSQL, background jobs with Resque</p>
-        </div>
-
-        <div class="card-project reveal">
-          <h2>fullstack developer</h2>
-          <h3>next décision | 2020 - 2022</h3>
-          <p>business applications with React and Node.js, Docker, microservices on Kubernetes, TDD, CI/CD with Jest and GitHub Actions</p>
-        </div>
-
-        <div class="card-project reveal">
-          <h2>freelance developer</h2>
-          <h3>2019 - 2020</h3>
-          <p>showcase and e-commerce websites, teaching assistant at Le Wagon, Paris</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="container mt-4 mb-4">
-      <h1 class="section-title reveal" id="about">about</h1>
-      <div class="card-project about-text reveal">
-        <p>
-          I'm a backend developer, Ruby on Rails first. After five years in finance I switched to code in 2019 (Le Wagon, Paris, #batch-321) and have been shipping backend features to production ever since: Rails monoliths, event-driven services, PostgreSQL, background jobs, Docker and Kubernetes.
-          <br>
-          I use AI every day in my workflow, and I like turning a vague need into working software by talking directly to the people who use it.
-          <br>
-          Based in France, looking at fully remote roles. Outside of work: video games and water sports! 🎮 🌊 🏄‍♂️
-        </p>
-      </div>
-
-      <div class="card-presentation reveal">
-        <div class="business">
-          <h3 class="mb-2">from finance</h3>
-          <p class="avatar-finance mb-3"></p>
-          <div class="test">
-            <div class="career">
-              <h4>career</h4>
-              <ul>
-                <li>financial controller | smalto</li>
-                <li>settlement manager | bnp paribas</li>
-                <li>financial controller | société générale</li>
-              </ul>
+      <section class="section" id="experience">
+        <p class="eyebrow">01 / experience</p>
+        <h2>shipped to production since 2019</h2>
+        <div class="log">
+          <article class="entry reveal">
+            <div class="card">
+              <div class="meta"><span class="date">2025 → now</span><span class="co">cheerz</span></div>
+              <h3>backend developer</h3>
+              <p>backend development on a production Ruby on Rails codebase</p>
             </div>
-            <div class="education">
-              <h4>education</h4>
-              <ul>
-                <li>mba audit & cost control | inseec paris</li>
-                <li>english courses abroad | kaplan new-york</li>
-                <li>master in management | iae nantes</li>
-              </ul>
+          </article>
+          <article class="entry reveal">
+            <div class="card">
+              <div class="meta"><span class="date">2023 → 2025</span><span class="co">ilek</span></div>
+              <h3>backend developer</h3>
+              <p>billing then collection teams: invoicing customers, then reducing and anticipating unpaid bills</p>
+              <p>NestJS / TypeScript service in hexagonal architecture with CQRS, AMQP messaging, new features in the Rails codebase, PostgreSQL</p>
+            </div>
+          </article>
+          <article class="entry reveal">
+            <div class="card">
+              <div class="meta"><span class="date">2022 → 2023</span><span class="co">investglass</span></div>
+              <h3>fullstack developer</h3>
+              <p>CRM for financial institutions: Rails MVC application, PostgreSQL, background jobs with Resque</p>
+            </div>
+          </article>
+          <article class="entry reveal">
+            <div class="card">
+              <div class="meta"><span class="date">2020 → 2022</span><span class="co">next décision</span></div>
+              <h3>fullstack developer</h3>
+              <p>business applications with React and Node.js, Docker, microservices on Kubernetes, TDD, CI/CD with Jest and GitHub Actions</p>
+            </div>
+          </article>
+          <article class="entry reveal">
+            <div class="card">
+              <div class="meta"><span class="date">2019 → 2020</span><span class="co">freelance</span></div>
+              <h3>freelance developer</h3>
+              <p>showcase and e-commerce websites, teaching assistant at Le Wagon, Paris</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="stack">
+        <p class="eyebrow">02 / stack</p>
+        <h2>what I build with</h2>
+        <div class="bento">
+          <div class="card span-3 reveal">
+            <h3>core</h3>
+            <div class="chips"><span>Ruby on Rails</span><span>PostgreSQL</span><span>Sidekiq / Resque</span><span>TDD</span></div>
+          </div>
+          <div class="card span-3 reveal">
+            <h3>architecture</h3>
+            <div class="chips"><span>hexagonal</span><span>CQRS</span><span>event sourcing</span><span>AMQP</span></div>
+          </div>
+          <div class="card span-2 reveal">
+            <h3>platform</h3>
+            <div class="chips"><span>Docker</span><span>Kubernetes</span><span>CI/CD</span><span>Git &amp; GitHub</span></div>
+          </div>
+          <div class="card span-2 reveal">
+            <h3>languages</h3>
+            <div class="chips"><span>TypeScript</span><span>NestJS</span><span>React</span></div>
+          </div>
+          <div class="card span-2 ai reveal">
+            <h3>AI-assisted development</h3>
+            <p>part of my workflow every day</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <p class="eyebrow">03 / about</p>
+        <h2>from finance to code</h2>
+        <div class="bento">
+          <div class="card span-4 reveal">
+            <p class="lead">I'm a backend developer and a Ruby on Rails enthusiast. After five years in finance I switched to code in 2019 (Le Wagon, Paris, #batch-321) and have been shipping backend features to production ever since: Rails monoliths, event-driven services, PostgreSQL, background jobs, Docker and Kubernetes.</p>
+            <p class="lead">I use AI every day in my workflow, and I like turning a vague need into working software by talking directly to the people who use it.</p>
+            <p class="lead">Based in France, looking at fully remote roles. Outside of work: video games and water sports 🎮 🌊 🏄‍♂️</p>
+          </div>
+          <div class="card span-2 reveal">
+            <h3>how I work</h3>
+            <div class="chips"><span>client focus</span><span>good communicant</span><span>deadlines &amp; prioritization</span><span>curiosity</span><span>continuous improvement</span><span>team spirit</span><span>management &amp; leadership</span></div>
+          </div>
+          <div class="card span-6 shift reveal">
+            <div class="side before">
+              <h3>finance</h3>
+              <p class="era">2014 → 2019</p>
+              <dl class="facts">
+                <dt>learned</dt>
+                <dd>mba audit &amp; cost control · inseec paris<br>master in management · iae nantes<br>english courses · kaplan new-york</dd>
+                <dt>worked at</dt>
+                <dd>bnp paribas · smalto · société générale</dd>
+              </dl>
+              <div class="chips"><span>financial controller</span><span>settlement manager</span><span>audit &amp; cost control</span></div>
+            </div>
+            <div class="compare">
+              <img class="then" src="images/avatar/finance.webp" alt="charles henry during his finance career" width="320" height="400" loading="lazy">
+              <img class="now" src="images/avatar/free.webp" alt="charles henry today" width="320" height="400" loading="lazy">
+              <span class="handle" aria-hidden="true"></span>
+              <span class="tag tag-then">2014 → 2019</span>
+              <span class="tag tag-now">2019 → now</span>
+              <input type="range" min="0" max="100" value="50" aria-label="slide to compare my photo during my finance years and today">
+            </div>
+            <div class="side after">
+              <h3>code</h3>
+              <p class="era">2019 → now</p>
+              <dl class="facts">
+                <dt>learned</dt>
+                <dd>le wagon, paris · batch #321</dd>
+                <dt>worked at</dt>
+                <dd>cheerz · ilek · investglass · next décision</dd>
+              </dl>
+              <div class="chips"><span class="hl">AI-assisted development</span><span class="hl">TDD</span><span class="hl">clean code</span></div>
             </div>
           </div>
         </div>
-        <div class="transition">
-          <h3>to</h3>
-        </div>
-        <div class="code">
-          <h3 class="mb-2">code!</h3>
-          <p class="avatar-free mb-3"></p>
-          <div class="programming">
-            <h4>programming skills</h4>
-            <ul>
-              <li>Ruby on Rails</li>
-              <li>TypeScript, NestJS, React</li>
-              <li>PostgreSQL</li>
-              <li>Sidekiq / Resque</li>
-              <li>AMQP, CQRS, hexagonal architecture, event sourcing</li>
-              <li>Docker & Kubernetes</li>
-              <li>Test Driven Development</li>
-              <li>CI/CD, Git & Github</li>
-              <li class="ai">AI-assisted development</li>
-            </ul>
-          </div>
-          <div class="soft">
-            <h4>soft skills</h4>
-            <ul>
-              <li>client focus</li>
-              <li>good communicant</li>
-              <li>deadlines & priorization</li>
-              <li>curiosity</li>
-              <li>continuous improvement</li>
-              <li>team spirit</li>
-              <li>management & leadership</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+      </section>
 
-      <div class="mt-2 text-center">
-        <a href="images/cv/cv.pdf" target="_blank" rel="noopener" class="resume">
-          <h3>résumé</h3>
-          <img src="images/cv/cv.svg" alt="">
-        </a>
-      </div>
-    </div>
-    <div class="footer">
-      <p>open to fully remote backend roles. get in touch: <a href="mailto:ch.boyeldieu@gmail.com">ch.boyeldieu@gmail.com</a></p>
-    </div>
-    <script src="js/script.js"></script>
+      <section class="section contact" id="contact">
+        <div class="card cta reveal">
+          <p class="eyebrow">04 / contact</p>
+          <h2>open to fully remote backend roles.</h2>
+          <div class="actions">
+            <button class="btn primary" type="button" data-copy-email>ch.boyeldieu@gmail.com</button>
+            <a class="btn" href="https://www.linkedin.com/in/charleshenry-stasboyeldieu/" target="_blank" rel="noopener">linkedin ↗</a>
+            <a class="btn" href="https://github.com/charleshsb" target="_blank" rel="noopener">github ↗</a>
+            <a class="btn" href="tel:+33659874451">phone</a>
+            <a class="btn" href="images/cv/cv.pdf" target="_blank" rel="noopener">résumé ↗</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <span>© 2026 charles henry stas boyeldieu</span>
+      <span>plain html, css and js · no tracking</span>
+    </footer>
+
+    <dialog id="palette" aria-label="command menu">
+      <input type="text" placeholder="type a command…" aria-label="filter commands" autocomplete="off">
+      <ul></ul>
+    </dialog>
+    <div id="toast" role="status" aria-live="polite"></div>
+
+    <script src="js/script.js?v=2"></script>
   </body>
 </html>
