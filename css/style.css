@@ -12,9 +12,9 @@
   --muted: #5f5a50;
   --line: rgba(17, 17, 17, 0.12);
   --card: #faf7f0;
-  --a1: #b8450f;
-  --a2: #d9541e;
-  --a3: #d9541e;
+  --a1: #b84719;
+  --a2: #b84719;
+  --a3: #b84719;
   --radius: 20px;
   --sans: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
   --serif: 'Instrument Serif', Georgia, 'Times New Roman', serif;
@@ -30,9 +30,9 @@
     --muted: #a39d90;
     --line: rgba(243, 238, 227, 0.14);
     --card: #1a1a18;
-    --a1: #f0875a;
-    --a2: #d9541e;
-    --a3: #d9541e;
+    --a1: #e0571f;
+    --a2: #e0571f;
+    --a3: #e0571f;
   }
 }
 
@@ -277,7 +277,7 @@ kbd {
 .btn.primary:hover {
   border-color: var(--a2);
   background: var(--a2);
-  color: #111111;
+  color: var(--bg);
 }
 
 .portrait {
@@ -649,7 +649,7 @@ html.js .reveal.in {
 }
 
 .cta .eyebrow {
-  color: #f0875a;
+  color: color-mix(in srgb, var(--bg) 72%, transparent);
 }
 
 .cta .btn {
@@ -664,14 +664,8 @@ html.js .reveal.in {
 .cta .btn.primary {
   border-color: var(--a2);
   background: var(--a2);
-  color: #111111;
+  color: var(--bg);
   font-weight: 600;
-}
-
-@media (prefers-color-scheme: dark) {
-  .cta .eyebrow {
-    color: #b8450f;
-  }
 }
 
 .cta h2 {
