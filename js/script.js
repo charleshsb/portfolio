@@ -67,13 +67,30 @@ function openUrl(url) {
   window.open(url, '_blank', 'noopener');
 }
 
+const RESUME_URLS = {
+  fr: 'images/cv/cv-stasboyeldieu.pdf',
+  en: 'images/cv/resume-stasboyeldieu.pdf',
+};
+
+function preferredResumeUrl() {
+  return navigator.language.toLowerCase().startsWith('fr') ? RESUME_URLS.fr : RESUME_URLS.en;
+}
+
+function setupResumeLinks() {
+  document.querySelectorAll('[data-resume]').forEach((link) => {
+    link.href = preferredResumeUrl();
+  });
+}
+
 const ACTIONS = [
   { label: 'go to experience', run: () => { location.hash = '#experience'; } },
   { label: 'go to stack', run: () => { location.hash = '#stack'; } },
   { label: 'go to about', run: () => { location.hash = '#about'; } },
   { label: 'go to contact', run: () => { location.hash = '#contact'; } },
   { label: 'copy email', run: copyEmail },
-  { label: 'open résumé', run: () => openUrl('images/cv/cv.pdf') },
+  { label: 'open résumé', run: () => openUrl(preferredResumeUrl()) },
+  { label: 'open résumé · français', run: () => openUrl(RESUME_URLS.fr) },
+  { label: 'open résumé · english', run: () => openUrl(RESUME_URLS.en) },
   { label: 'open github', run: () => openUrl('https://github.com/charleshsb') },
   { label: 'open linkedin', run: () => openUrl('https://www.linkedin.com/in/charleshenry-stasboyeldieu/') },
 ];
@@ -180,3 +197,4 @@ trackSpotlight();
 typeLines(document.querySelector('#typed'), TYPED_LINES);
 setupPalette();
 setupCompare();
+setupResumeLinks();
