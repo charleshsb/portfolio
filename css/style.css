@@ -764,7 +764,8 @@ dialog li:hover {
   }
 
   .portrait {
-    max-width: 380px;
+    width: calc(100% - 16px);
+    max-width: 364px;
   }
 
   .nav nav {
