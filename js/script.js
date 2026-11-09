@@ -88,9 +88,9 @@ const ACTIONS = [
   { label: 'go to about', run: () => { location.hash = '#about'; } },
   { label: 'go to contact', run: () => { location.hash = '#contact'; } },
   { label: 'copy email', run: copyEmail },
-  { label: 'open résumé', run: () => openUrl(preferredResumeUrl()) },
-  { label: 'open résumé · français', run: () => openUrl(RESUME_URLS.fr) },
-  { label: 'open résumé · english', run: () => openUrl(RESUME_URLS.en) },
+  { label: 'open resume', run: () => openUrl(preferredResumeUrl()) },
+  { label: 'open resume · french', run: () => openUrl(RESUME_URLS.fr) },
+  { label: 'open resume · english', run: () => openUrl(RESUME_URLS.en) },
   { label: 'open github', run: () => openUrl('https://github.com/charleshsb') },
   { label: 'open linkedin', run: () => openUrl('https://www.linkedin.com/in/charleshenry-stasboyeldieu/') },
 ];
