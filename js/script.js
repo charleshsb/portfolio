@@ -1,5 +1,5 @@
 const EMAIL = 'ch.boyeldieu@gmail.com';
-const TYPED_LINES = ['shipping rails in production', 'building with AI, every day', 'turning needs into software'];
+const TYPED_LINES = ['shipping backend in production', 'rails, typescript, whatever the stack needs', 'building with AI, every day', 'turning needs into software'];
 const isMotionReduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 const toast = document.querySelector('#toast');
